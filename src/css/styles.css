@@ -4,6 +4,16 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+@import url('./layout/slider.css');
+@import url('./layout/modal.css');
+
 @import url('./layout/header.css');
-@import url('./studio/hero.css');
+
+@import url('./studio/hero/hero.css');
+@import url('./studio/hero/hero768.css');
+@import url('./studio/hero/hero1200.css');
+
+
+
