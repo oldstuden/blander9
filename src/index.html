@@ -5,6 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -16,14 +24,52 @@
       <!-- product -->
       <load src="" />
       <!-- animate -->
-      <load src="" />
+      <load src="./partials/swiper.html" />
     </main>
     <!-- footer -->
     <load src="" />
 
     <!-- modal -->
-    <load src="" />
+    <load src="./partials/modal.html" />
 
     <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper1 = new Swiper('.mySwiper1', {
+        effect: 'coverflow',
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination1',
+        },
+      });
+
+      var swiper3 = new Swiper('.mySwiper3', {
+        effect: 'coverflow',
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination3',
+        },
+      });
+    </script>
   </body>
 </html>
